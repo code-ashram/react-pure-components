@@ -1,12 +1,17 @@
 export default function StoryTray({ stories }) {
-    stories.push({
+
+    const storiesCopy = (story) => [...stories, story]
+
+    const newStory = {
         id: 'create',
         label: 'Create Story'
-    });
+    }
+
+    const storiesList = storiesCopy(newStory)
 
     return (
         <ul>
-            {stories.map(story => (
+            {storiesList.map(story => (
                 <li key={story.id}>
                     {story.label}
                 </li>

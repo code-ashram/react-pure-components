@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import StoryTray from './StoryTray.jsx';
 
-let initialStories = [
+export let initialStories = [
     {id: 0, label: "Ankit's Story" },
     {id: 1, label: "Taylor's Story" },
 ];
